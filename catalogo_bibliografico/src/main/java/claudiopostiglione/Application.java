@@ -18,7 +18,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Supplier;
 
 public class Application {
-    public static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("catalogoBibliografico");
+    public static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("catalogobibliografico");
 
     public static void main(String[] args) throws InterruptedException {
 
