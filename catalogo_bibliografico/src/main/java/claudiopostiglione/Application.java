@@ -183,7 +183,8 @@ public class Application {
                     break;
                 case 7:
                     System.out.println("Inserisci il numero della tessera utente");
-
+                    long numTessera = Long.parseLong(scanner.nextLine());
+                    pd.findElementoByPrestito(numTessera);
                     break;
                 case 8:
                     break;
