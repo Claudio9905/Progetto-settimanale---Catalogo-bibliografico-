@@ -9,3 +9,5 @@ Il diagramma l'ho impostato in questa maniera:
 ENTITA: 
 - CATALOGO BIBLIOGRAFICO con le sue sotto-entità LIBRI e RIVISTE con cardinalità 1a1 (in JPA ho usato la strategia JOINED), poi esso è in relazione OnetoOne con l'entità PRESTITO 
 - L'entità UTENTE è in relazione OnetoMany con l'entità PRESTITO
+
+PS. nel codice, l'ultima funzione, cioè quella di ricercare i prestiti scaduti e non, non è stata ancora implementata
