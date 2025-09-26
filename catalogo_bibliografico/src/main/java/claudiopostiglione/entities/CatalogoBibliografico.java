@@ -12,10 +12,14 @@ public abstract class CatalogoBibliografico {
 
     //Attributi
     @Id
-    @GeneratedValue
-    protected UUID codiceISBN;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "Codice ISBN", nullable = false)
+    protected long codiceISBN;
+    @Column(name = "Titolo", nullable = false)
     protected String titolo;
+    @Column(name = "Anno di pubblicazione", nullable = false)
     protected LocalDate annoDiPubblicazione;
+    @Column(name = "Numero delle pagine", nullable = false)
     protected int numeroPagine;
 
 
@@ -33,7 +37,7 @@ public abstract class CatalogoBibliografico {
     }
 
     //Metodi
-    public UUID getCodiceISBN() {
+    public long getCodiceISBN() {
         return codiceISBN;
     }
 

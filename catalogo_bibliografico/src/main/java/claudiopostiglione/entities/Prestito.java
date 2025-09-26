@@ -11,8 +11,8 @@ public class Prestito {
 
     //Attributi
     @Id
-    @GeneratedValue
-    private UUID idPrestito;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long idPrestito;
 
     @Column(name = "Data inizio prestito", nullable = false)
     private LocalDate dataInizioPrestito;
@@ -33,15 +33,17 @@ public class Prestito {
     public Prestito() {
     }
 
-    public Prestito(LocalDate dataInizioPrestito, LocalDate dataRestituzione30gg, LocalDate dataRestituzioneEffettiva) {
+    public Prestito(LocalDate dataInizioPrestito, LocalDate dataRestituzione30gg, LocalDate dataRestituzioneEffettiva, Utente utente, CatalogoBibliografico elementoPrestato) {
 
         this.dataInizioPrestito = dataInizioPrestito;
         this.dataRestituzione30gg = dataRestituzione30gg;
         this.dataRestituzioneEffettiva = dataRestituzioneEffettiva;
+        this.utente = utente;
+        this.elementoPrestato = elementoPrestato;
     }
 
     //Metodi
-    public UUID getIdPrestito() {
+    public long getIdPrestito() {
         return idPrestito;
     }
 

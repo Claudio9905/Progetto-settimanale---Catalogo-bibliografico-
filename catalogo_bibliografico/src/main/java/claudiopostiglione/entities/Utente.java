@@ -12,8 +12,8 @@ public class Utente {
 
     //Attributi
     @Id
-    @GeneratedValue
-    private UUID numTessera;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long numTessera;
     @Column(name = "Nome", nullable = false)
     private String nome;
     @Column(name = "Cognome", nullable = false)
@@ -37,7 +37,7 @@ public class Utente {
     }
 
     //Metodi
-    public UUID getNumTessera() {
+    public long getNumTessera() {
         return numTessera;
     }
 

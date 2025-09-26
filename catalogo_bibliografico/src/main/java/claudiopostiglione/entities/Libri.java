@@ -1,9 +1,6 @@
 package claudiopostiglione.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
@@ -12,8 +9,10 @@ import java.time.LocalDate;
 public class Libri extends CatalogoBibliografico {
 
     //Attributi
+    @Column(name = "Autore", nullable = false)
     private String autore;
     @Enumerated(EnumType.STRING)
+    @Column(name = "Genere", nullable = false)
     private GenereLibro genere;
 
     //Costruttori

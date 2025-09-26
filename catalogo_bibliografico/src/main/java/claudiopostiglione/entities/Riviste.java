@@ -1,9 +1,6 @@
 package claudiopostiglione.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
@@ -13,6 +10,7 @@ public class Riviste extends CatalogoBibliografico {
 
     //Attributi
     @Enumerated(EnumType.STRING)
+    @Column(name = "Periodicità", nullable = false)
     private TipoPeriodicità periodicità;
 
     //Costruttori
