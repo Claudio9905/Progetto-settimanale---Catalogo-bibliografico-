@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6968b7c-5761-43a0-b0e4-aa5ba3e69f38" name="Changes" comment="" />
+    <list default="true" id="f6968b7c-5761-43a0-b0e4-aa5ba3e69f38" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/catalogo_bibliografico/src/main/java/claudiopostiglione/exceptions/YearNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalogo_bibliografico/src/main/java/claudiopostiglione/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogo_bibliografico/src/main/java/claudiopostiglione/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalogo_bibliografico/src/main/java/claudiopostiglione/dao/CatalogoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogo_bibliografico/src/main/java/claudiopostiglione/dao/CatalogoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalogo_bibliografico/src/main/java/claudiopostiglione/dao/PrestitoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogo_bibliografico/src/main/java/claudiopostiglione/dao/PrestitoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalogo_bibliografico/src/main/java/claudiopostiglione/entities/CatalogoBibliografico.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogo_bibliografico/src/main/java/claudiopostiglione/entities/CatalogoBibliografico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalogo_bibliografico/src/main/java/claudiopostiglione/entities/Prestito.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogo_bibliografico/src/main/java/claudiopostiglione/entities/Prestito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalogo_bibliografico/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalogo_bibliografico/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,24 +19,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="33EHuzQp6DIox5Pe7oSEHnaDQvE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f6968b7c-5761-43a0-b0e4-aa5ba3e69f38" name="Changes" comment="" />

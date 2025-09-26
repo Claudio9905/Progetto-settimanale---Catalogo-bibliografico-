@@ -26,7 +26,7 @@ public class Prestito {
     private Utente utente;
 
     @OneToOne
-    @JoinColumn(name = "elementoPrestato", nullable = false)
+    @JoinColumn(name = "idElementoPrestato", nullable = false, unique = true)
     private CatalogoBibliografico elementoPrestato;
 
     //Costruttori
@@ -43,6 +43,15 @@ public class Prestito {
     }
 
     //Metodi
+
+    public CatalogoBibliografico getElementoPrestato() {
+        return elementoPrestato;
+    }
+
+    public void setElementoPrestato(CatalogoBibliografico elementoPrestato) {
+        this.elementoPrestato = elementoPrestato;
+    }
+
     public long getIdPrestito() {
         return idPrestito;
     }

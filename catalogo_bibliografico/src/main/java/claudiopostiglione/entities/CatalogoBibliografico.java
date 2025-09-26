@@ -24,7 +24,7 @@ public abstract class CatalogoBibliografico {
 
 
     @OneToOne(mappedBy = "elementoPrestato")
-    private Prestito prestito;
+    protected Prestito prestito;
 
     //Costruttori
     public CatalogoBibliografico() {
@@ -37,6 +37,14 @@ public abstract class CatalogoBibliografico {
     }
 
     //Metodi
+    public Prestito getPrestito() {
+        return prestito;
+    }
+
+    public void setPrestito(Prestito prestito) {
+        this.prestito = prestito;
+    }
+
     public long getCodiceISBN() {
         return codiceISBN;
     }

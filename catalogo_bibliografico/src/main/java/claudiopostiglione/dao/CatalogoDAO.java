@@ -6,6 +6,7 @@ import claudiopostiglione.entities.Riviste;
 import claudiopostiglione.exceptions.IdNotFoundException;
 import claudiopostiglione.exceptions.NameAuthorNotFoundException;
 import claudiopostiglione.exceptions.TitleElementNotFoundException;
+import claudiopostiglione.exceptions.YearNotFoundException;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Query;
@@ -70,6 +71,7 @@ public class CatalogoDAO {
 
     public List<CatalogoBibliografico> findCatalogoByAnnoDiPubblicazione(int annoDiPubblicazione) {
         TypedQuery<CatalogoBibliografico> query = entityManager.createQuery("SELECT ca FROM CatalogoBibliografico ca WHERE  EXTRACT(YEAR FROM ca.annoDiPubblicazione) = :annoDiPubblicazione", CatalogoBibliografico.class);
+        if(query == null) throw new YearNotFoundException(annoDiPubblicazione);
         query.setParameter("annoDiPubblicazione", annoDiPubblicazione);
         return query.getResultList();
     }

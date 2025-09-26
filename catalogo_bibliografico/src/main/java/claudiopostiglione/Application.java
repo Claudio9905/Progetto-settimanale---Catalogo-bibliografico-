@@ -30,7 +30,7 @@ public class Application {
 
 
         System.out.println("Connessione in corso...");
-        Thread.sleep(5000);
+        Thread.sleep(1000);
         System.out.println("Connessione al database effetuata!");
 
 
@@ -127,7 +127,7 @@ public class Application {
                     } else if (sceltaElemento == 2) {
                         System.out.println("| Inserisci il titolo:");
                         String titolo = scanner.nextLine();
-                        System.out.println("| Inserisci l'anno di pubblicazione (year/month/day");
+                        System.out.println("| Inserisci l'anno di pubblicazione (year/month/day)");
                         int year = Integer.parseInt(scanner.nextLine());
                         int month = Integer.parseInt(scanner.nextLine());
                         int day = Integer.parseInt(scanner.nextLine());
@@ -184,7 +184,7 @@ public class Application {
                 case 7:
                     System.out.println("Inserisci il numero della tessera utente");
                     long numTessera = Long.parseLong(scanner.nextLine());
-                    pd.findElementoByPrestito(numTessera);
+                    pd.findElementoByPrestito(numTessera).forEach(System.out::println);
                     break;
                 case 8:
                     break;

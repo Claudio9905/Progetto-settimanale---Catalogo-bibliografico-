@@ -33,7 +33,8 @@ public class PrestitoDAO {
     }
 
     public List<Prestito> findElementoByPrestito(long idUtente){
-        TypedQuery<Prestito> query = entityManager.createQuery("SELECT .elementoPrestato FROM Prestito p WHERE p.utente = :idUtente", Prestito.class);
+        TypedQuery<Prestito> query = entityManager.createQuery("SELECT p.elementoPrestato FROM Prestito p WHERE p.utente = :idUtente", Prestito.class);
+        if(query == null) throw new IdNotFoundException(idUtente);
         query.setParameter("idUtente", idUtente);
         return  query.getResultList();
     }
